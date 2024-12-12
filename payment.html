@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+
+    <title>Unity Medical Center</title>
+    <link rel="stylesheet" href="./Reset_style_sheet.css" />
+  <link rel="stylesheet" href="./payment.css" />
+</head>
+
+<body>
+  <header id="header">
+    <section id="logo">
+      <a href="./index.html">
+        <img id="logo_img" src="./img/logo jp.webp" />
+      </a>
+    </section>
+
+
+    <nav id="nav_bar">
+      <a href="./index.html" class="menu-item active">Home</a>
+      <a href="./order.html" class="menu-item">Order</a>
+      <a href="./contactus.html" class="menu-item">Contact Us</a>
+
+    </nav>
+    
+   
+  </header>
+
+  
+
+  <header>
+    <h1>Complete Your Purchase</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Order Summary</h2>
+      <table class="cart-table">
+        <thead>
+          <tr>
+            
+            <th>Medicine</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody id="order-summary">
+          <!-- Order details will be populated here -->
+        </tbody>
+      </table>
+      <div class="total-price">
+        <strong>Total Price:</strong> <span id="total-price-summary">$0.00</span>
+      </div>
+    </section>
+
+    <section class="orderform">
+      <div class="order-container">
+          <div class="left">
+              <h1>Order details</h1>
+              <form>
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" placeholder="Enter name">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" placeholder="Enter email">
+                  <label for="address">Address</label>
+                  <input type="text" id="address" placeholder="Enter address">
+                  <label for="city">City</label>
+                  <input type="text" id="city" placeholder="Enter city">
+                  <div id="zip1">
+                      <label for="branch">Branches</label>
+                      <select id="branch">
+                          <option>Choose branch</option>
+                          <option>Kurunegala</option>
+                          <option>Kandy</option>
+                          <option>Matale</option>
+                      </select>
+                      <label for="zipcode">Zip Code</label>
+                      <input type="number" id="zipcode" placeholder="Zip code" min="0">
+                  </div>
+              </form>
+          </div>
+          <div class="right">
+              <h1>Payment</h1>
+              <form>
+                  <p>Accepted Cards</p>
+                  <div class="card-options">
+                      <input type="radio" id="visa" aria-label="visa" name="card" value="Visa">
+                      <label for="visa"><img src="./img/visa.jpeg" width="100" alt="Visa Card"></label>
+                      <input type="radio" id="mastercard" name="card" value="MasterCard">
+                      <label for="mastercard"><img src="./img/mastercard_new.jpg" width="100" alt="MasterCard"></label>
+                  </div>
+                  <label for="cardnumber">Credit Card Number</label>
+                  <input type="number" id="cardnumber" placeholder="Enter card number">
+                  <label for="expmonth">Exp Month</label>
+                  <input type="number" id="expmonth" placeholder="Enter month" min="1" max="12">
+                  <div id="zip2">
+                      <label for="expyear">Exp Year</label>
+                      <select id="expyear">
+                          <option>Choose Year...</option>
+                          <option>2022</option>
+                          <option>2023</option>
+                          <option>2024</option>
+                          <option>2025</option>
+                      </select>
+                      <label for="cvv">CVV</label>
+                      <input type="number" id="cvv" placeholder="CVV" min="0">
+                  </div>
+                  <button id="pay-button">Pay</button>
+              </form>
+              
+             
+          </div>
+      </div>
+  </section>
+  <!-- Order Form Ends -->
+
+  
+
+    <div id="thank-you-message" class="hidden">
+      <h2>Thank You for Your Purchase!</h2>
+      <p>Your order has been confirmed and will be delivered by <span id="delivery-date-summary"></span>.</p>
+    </div>
+  </main>
+
+  <section class="footer">
+    <div class="box-container">
+      <div class="logob">
+        <img src="./img/logo jp.webp" alt="Logo">
+      </div>
+      <div class="box">
+        <h3>Quick Links</h3>
+        <a href="./index.html" class="menu-item active">Home</a>
+        <a href="./order.html" class="menu-item">Order</a>
+        <a href="./contactus.html" class="menu-item">Contact Us</a>
+        <a href="./patment.html" class="menu-item">Pay Now</a>
+
+      </div>
+      <div class="box">
+        <h3>Our Services</h3>
+        <a href="./reservations.html"><i class="fas fa-chevron-right"></i>Patient Registration</a>
+        <a href="./doctors.html"><i class="fas fa-chevron-right"></i>Doctor appointment</a>
+        <a href="./pharmacy.html"><i class="fas fa-chevron-right"></i>Pharmacy</a>
+
+      </div>
+      <div class="box">
+        <h3>Contact Info</h3>
+        <a href="+1234567890"><i class="fas fa-phone"></i> +94-81 245 2587</a>
+        <a href="+1112223333"><i class="fas fa-phone"></i> +94-81 528 6547</a>
+        <a href="OASISHospital@gmail.com"><i class="fas fa-envelope"></i> unitymedicalcenter@gmail.com</a>
+        <a href="OASIS 123@gmail.com"><i class="fas fa-envelope"></i> umc@gmail.com</a>
+        <a href="#"><i class="fas fa-map-marker-alt"></i> Kandy, Sri Lanka - 400104</a>
+      </div>
+      <div class="box">
+        <h3>Follow Us</h3>
+        <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="#"><i class="fab fa-pinterest"></i> Pinterest</a>
+      </div>
+    </div>
+
+    <div class="credit"><span>Unity Medical Center</span> | All rights reserved</div>
+  </section>
+
+  <!--footer ends-->
+</body>
+
+
+
+<script src="payment.js"></script>
+</body>
+
+</html>
