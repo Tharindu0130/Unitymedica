@@ -39,7 +39,6 @@ body {
 .menu-item {
   padding-right: 3vh;
   color: rgb(226, 226, 226);
-  font-style: none;
 }
 
 /* Navigation Bar Alignment */
@@ -50,7 +49,6 @@ body {
   justify-content: flex-end;
   font-size: 2.7vh;
   margin-right: 4vh;
-  text-underline-offset: none;
 }
 
 #nav_bar a {
