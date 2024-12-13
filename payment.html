@@ -19,7 +19,7 @@
   <header id="header">
     <section id="logo">
       <a href="./index.html">
-        <img id="logo_img" src="./img/logo-jp.webp" alt="logo"/>
+        <img id="logo_img" src="./img/logo jp.webp" alt="logopic" />
       </a>
     </section>
 
@@ -30,8 +30,13 @@
       <a href="./contactus.html" class="menu-item">Contact Us</a>
 
     </nav>
-    </header>
-    <header>
+    
+   
+  </header>
+
+  
+
+  <header>
     <h1>Complete Your Purchase</h1>
   </header>
 
@@ -41,6 +46,7 @@
       <table class="cart-table">
         <thead>
           <tr>
+            
             <th>Medicine</th>
             <th>Quantity</th>
             <th>Price</th>
@@ -61,13 +67,13 @@
               <h1>Order details</h1>
               <form>
                   <label for="name">Full Name</label>
-                  <input type="text" id="name" placeholder="Enter name">
+                  <input type="text" id="name" placeholder="Enter name" required>
                   <label for="email">Email</label>
-                  <input type="email" id="email" placeholder="Enter email">
+                  <input type="email" id="email" placeholder="Enter email" required>
                   <label for="address">Address</label>
-                  <input type="text" id="address" placeholder="Enter address">
+                  <input type="text" id="address" placeholder="Enter address" required>
                   <label for="city">City</label>
-                  <input type="text" id="city" placeholder="Enter city">
+                  <input type="text" id="city" placeholder="Enter city" required>
                   <div id="zip1">
                       <label for="branch">Branches</label>
                       <select id="branch">
@@ -77,7 +83,7 @@
                           <option>Matale</option>
                       </select>
                       <label for="zipcode">Zip Code</label>
-                      <input type="number" id="zipcode" placeholder="Zip code" min="0">
+                      <input type="number" id="zipcode" placeholder="Zip code" min="0" required>
                   </div>
               </form>
           </div>
@@ -86,34 +92,39 @@
               <form>
                   <p>Accepted Cards</p>
                   <div class="card-options">
-                      <input type="radio" id="visa" aria-label="visa" name="card" value="Visa">
-                      <label for="visa"><img src="./img/visa.jpeg" width="100" alt="Visa Card"></label>
-                      <input type="radio" id="mastercard" name="card" value="MasterCard">
+                      <input type="radio" id="visa" aria-label="visa" name="card" value="Visa" required>
+                      <label for="visa"><img src="./img/visa.webp" width="100" alt="Visa Card"></label>
+                      <input type="radio" id="mastercard" name="card" value="MasterCard" required>
                       <label for="mastercard"><img src="./img/mastercard_new.jpg" width="100" alt="MasterCard"></label>
                   </div>
                   <label for="cardnumber">Credit Card Number</label>
-                  <input type="number" id="cardnumber" placeholder="Enter card number">
+                  <input type="number" id="cardnumber" placeholder="Enter card number" required>
                   <label for="expmonth">Exp Month</label>
-                  <input type="number" id="expmonth" placeholder="Enter month" min="1" max="12">
+                  <input type="number" id="expmonth" placeholder="Enter month" min="1" max="12" required>
                   <div id="zip2">
                       <label for="expyear">Exp Year</label>
                       <select id="expyear">
                           <option>Choose Year...</option>
+                          <option>2022</option>
+                          <option>2023</option>
                           <option>2024</option>
                           <option>2025</option>
-                          <option>2026</option>
-                          <option>2027</option>
                       </select>
                       <label for="cvv">CVV</label>
-                      <input type="number" id="cvv" placeholder="CVV" min="0">
+                      <input type="number" id="cvv" placeholder="CVV" min="0" required>
                   </div>
-                  <button id="pay-button">Pay</button>
+                  <button id="pay-button" type="submit">Pay</button>
               </form>
-              </div>
+              
+             
+          </div>
       </div>
   </section>
   <!-- Order Form Ends -->
-      <div id="thank-you-message" class="hidden">
+
+  
+
+    <div id="thank-you-message" class="hidden">
       <h2>Thank You for Your Purchase!</h2>
       <p>Your order has been confirmed and will be delivered by <span id="delivery-date-summary"></span>.</p>
     </div>
@@ -143,8 +154,8 @@
         <h3>Contact Info</h3>
         <a href="+1234567890"><i class="fas fa-phone"></i> +94-81 245 2587</a>
         <a href="+1112223333"><i class="fas fa-phone"></i> +94-81 528 6547</a>
-        <a href="Unitymedi@gmail.com"><i class="fas fa-envelope"></i> unitymedicalcenter@gmail.com</a>
-        <a href="Unitymedi123@gmail.com"><i class="fas fa-envelope"></i> umc@gmail.com</a>
+        <a href="OASISHospital@gmail.com"><i class="fas fa-envelope"></i> unitymedicalcenter@gmail.com</a>
+        <a href="OASIS 123@gmail.com"><i class="fas fa-envelope"></i> umc@gmail.com</a>
         <a href="#"><i class="fas fa-map-marker-alt"></i> Kandy, Sri Lanka - 400104</a>
       </div>
       <div class="box">
@@ -161,9 +172,11 @@
   </section>
 
   <!--footer ends-->
-    <script src="payment.js"></script>
 </body>
 
 
+
+<script src="payment.js"></script>
+</body>
 
 </html>
